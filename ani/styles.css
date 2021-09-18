@@ -3,7 +3,26 @@
   height: 50px;
   width: 50px;
   border: 1px solid transparent;
+  animation: ani1 3s infinite alternate ease, background-ani 3s infinite alternate ease;
 }
-h1 {
-  border:2px solid #a00;
+.box{
+
+}
+@keyframes ani1{
+  from{
+    height:50px;
+    width:50px
+  }
+  to{
+    width:4px;
+  }
+}
+
+@keyframes background-ani{
+  from{
+    background-color: #a00;
+  }
+  to{
+    background-color: #00a;
+  }
 }
