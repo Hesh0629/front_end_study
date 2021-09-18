@@ -4,3 +4,9 @@
   width: 50px;
   border: 1px solid transparent;
 }
+h1 {
+  border:2px solid #a00;
+}
+body {
+  background: #a00;
+}
