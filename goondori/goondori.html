@@ -6,7 +6,9 @@
 	</head>
 	<body>
 		<div id="contents">
-			<p id="title-comp"><b>Left duration of military service</b>🏁</p>
+			<p id="title-comp"><b>Left duration of military service</b>🏁
+			<span id="percent_on_screen"></span>
+			</p>
 			<div id="border-comp">
 				<div id="battery"></div>
 			</div>
@@ -16,8 +18,12 @@
 				var edDate = new Date(2022, 03, 06);
 				var btDay = (now.getTime() - stDate.getTime()) / (1000 * 60 * 60 * 24);
 				var percent = (btDay / 546) * 100;
+				percent+="%";
+				percent=(percent[0]+percent[1]+percent[2]+percent[3])+"%";
 				var battery = document.getElementById('battery');
-				battery.style.width=percent+"%";
+				var percent_on_screen = document.getElementById('percent_on_screen');
+				battery.style.width=percent;
+				percent_on_screen.innerText=percent;
 			</script>
 		</div>
 	</body>
