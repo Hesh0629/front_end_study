@@ -19,5 +19,8 @@
 	background-color:#eee;
 }
 #battery{
-	<p>아직 작업중입니닷! ㅎㅎ;;</p>
+	width:650px;
+	height:100px;
+	background-image: url('./image/battery.png');
+	background-repeat:repeat-x;
 }
