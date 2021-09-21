@@ -10,9 +10,11 @@
 	font-size:25px;
 }
 #contents{
+	position:fixed;
+	top:200px;
+	left: 100px;
 	width:700px;
-	height:200px;
-	margin:0px;
+	height:250px;
 	background: linear-gradient(180deg, #68478D, #FFA400);
 }
 #border-comp{
